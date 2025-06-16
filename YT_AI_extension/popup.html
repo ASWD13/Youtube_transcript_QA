@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YT AI Assistant</title>
+  <style>
+    body {
+      font-family: "Courier New", monospace;
+      margin: 20px;
+      width: 400px;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+      text-align: center;
+      color: #00ffff;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #2e2e2e;
+      color: #ffffff;
+      border: 1px solid #444;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: transparent;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00ffff10;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    #answer {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #cfcfcf;
+      white-space: pre-wrap;
+    }
+
+    #loading {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>YT AI Assistant</h2>
+  <input type="text" id="url" placeholder="Paste YouTube URL..." />
+  <textarea id="question" placeholder="Ask a question about the video..."></textarea>
+  <button id="ask">Ask</button>
+  <div id="loading" style="display: none;">Loading...</div>
+  <p id="answer"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

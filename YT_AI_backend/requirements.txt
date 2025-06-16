@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+langchain
+langchain_community
+youtube_transcript_api
+faiss-cpu
+transformers
+huggingface-hub
+groq
